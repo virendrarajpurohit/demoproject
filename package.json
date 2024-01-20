@@ -1,15 +1,13 @@
 {
+  "scripts": {
+    "start": "node makeVideo.js"
+},
   "dependencies": {
     "axios": "^1.6.5",
-    "cron": "^3.1.6",
     "ffmpeg": "^0.0.4",
     "fluent-ffmpeg": "^2.1.2",
     "fs-extra": "^10.1.0",
-    "gtts": "^0.2.1",
-    "node-cron": "^3.0.3",
-    "node-mailer": "^0.1.1",
     "puppeteer": "^17.1.3",
-    "videoshow": "^0.1.12",
     "youtube-videos-uploader": "^2.0.25"
   }
 }
