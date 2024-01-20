@@ -40,7 +40,7 @@ const onVideoUploadSuccess = (videoUrl) => {
 // }
 
 (async  () => {
-  for (let i = 0; i < riddles.length; i++) {
+  for (let i = 0; i < 2; i++) {
           
           await delay();
           console.log(i);
@@ -50,7 +50,7 @@ const onVideoUploadSuccess = (videoUrl) => {
 
 function delay() {
   return new Promise((resolve, reject) => {
-          setTimeout(resolve, 60000);
+          setTimeout(resolve, 3 * 60000);
   });
 }
 
@@ -112,7 +112,7 @@ function loop(i){
 
     //setTimeout(applyEffectToVideo, 20000, i);
   
-    setTimeout(uploadVideoFile, 30000, i);
+    setTimeout(uploadVideoFile, 30000);
   
 }
 
@@ -199,7 +199,7 @@ function loop(i){
         });
       }
 
-      function uploadVideoFile(i){
+      function uploadVideoFile(){
       const video1 = { path: 'out.mp4', title: 'test video title', description: 'test video description' }
        upload (credentials, [video1], {headless:true, args :["--hide-scrollbars", "--disable-web-security","--no-sandbox", "--disabled-setupid-sandbox"]}).then(console.log)
       }
