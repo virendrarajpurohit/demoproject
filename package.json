@@ -1,8 +1,8 @@
 {
   "dependencies": {
-  "main": "xyz.js",
+  "main": "makeVideo.js",
   "scripts": {
-    "start": "node xyz.js"
+    "start": "node makeVideo.js"
   },
     "axios": "^1.6.5",
     "ffmpeg": "^0.0.4",
