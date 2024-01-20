@@ -1,7 +1,5 @@
 var ffmpeg = require('fluent-ffmpeg');
 var axios = require('axios');
-const cron = require("node-cron");
-const CronJob = require('cron').CronJob;
 const fs = require('fs');
 const riddles = require('./riddles.js');
 const { upload } = require('youtube-videos-uploader'); //vanilla javascript
