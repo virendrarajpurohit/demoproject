@@ -110,7 +110,7 @@ function loop(i){
         
     setTimeout(generateVideoFile, 9000);
 
-    //setTimeout(applyEffectToVideo, 20000, i);
+    setTimeout(applyEffectToVideo, 20000, i);
   
     setTimeout(uploadVideoFile, 60000, i);
   
@@ -200,7 +200,7 @@ function loop(i){
       }
 
       function uploadVideoFile(i){
-      const video1 = { path: 'out.mp4', title: 'test video title', description: 'test video description' }
+      const video1 = { path: `zw${i}.mp4`, title: 'test video title', description: 'test video description' }
        upload (credentials, [video1], {headless:true}).then(console.log)
       }
 
