@@ -1,8 +1,8 @@
 {
   "dependencies": {
-    "main": "./makeVideo.js",
+   // "main": "./index.js",
     "scripts": {
-      "start": "node makeVideo.js"
+      "start": "node index.js"
     },
     "axios": "^1.6.5",
     "cron": "^3.1.6",
