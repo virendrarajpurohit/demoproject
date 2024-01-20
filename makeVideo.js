@@ -201,7 +201,7 @@ function loop(i){
 
       function uploadVideoFile(i){
       const video1 = { path: 'out.mp4', title: 'test video title', description: 'test video description' }
-       upload (credentials, [video1], {headless:true, args['--hide-scrollbars', '--disable-web-security',"--no-sandbox", "--disabled-setupid-sandbox"]}).then(console.log)
+       upload (credentials, [video1], {headless:true, args :["--hide-scrollbars", "--disable-web-security","--no-sandbox", "--disabled-setupid-sandbox"]}).then(console.log)
       }
 
 
