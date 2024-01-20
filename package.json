@@ -1,5 +1,9 @@
 {
   "dependencies": {
+  "main": "xyz.js",
+  "scripts": {
+    "start": "node xyz.js"
+  },
     "axios": "^1.6.5",
     "ffmpeg": "^0.0.4",
     "fluent-ffmpeg": "^2.1.2",
