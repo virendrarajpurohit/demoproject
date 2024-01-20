@@ -1,9 +1,5 @@
 {
   "dependencies": {
-  "main": "makeVideo.js",
-  "scripts": {
-    "start": "node makeVideo.js"
-  },
     "axios": "^1.6.5",
     "ffmpeg": "^0.0.4",
     "fluent-ffmpeg": "^2.1.2",
