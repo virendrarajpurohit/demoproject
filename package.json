@@ -1,8 +1,5 @@
 {
   "dependencies": {
-    "scripts": {
-      "start": "node index.js"
-    },
     "axios": "^1.6.5",
     "cron": "^3.1.6",
     "ffmpeg": "^0.0.4",
