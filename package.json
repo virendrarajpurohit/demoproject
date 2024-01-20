@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "scripts": {
-      "start": "node makeVideo.js"
+      "start": "node dist/makeVideo.js"
     },
     "axios": "^1.6.5",
     "cron": "^3.1.6",
