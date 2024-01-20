@@ -4,7 +4,6 @@
     "ffmpeg": "^0.0.4",
     "fluent-ffmpeg": "^2.1.2",
     "fs-extra": "^10.1.0",
-    "node-mailer": "^0.1.1",
     "youtube-videos-uploader": "^2.0.25"
   }
 }
