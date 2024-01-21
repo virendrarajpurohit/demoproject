@@ -206,7 +206,7 @@ function loop(i){
         '--disable-setuid-sandbox',
         '--no-sandbox',
         '--no-zygote',
-        "enable-automation","disable-web-security","allow-running-insecure-content"]}).then(console.log)
+        "enable-automation","disable-web-security","allow-running-insecure-content"'--disable-blink-features=AutomationControlled']]}).then(console.log)
       }
 
 
