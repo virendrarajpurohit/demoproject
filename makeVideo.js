@@ -204,12 +204,9 @@ function loop(i){
        upload (credentials, [video1], {headless:true, args :[ '--disable-gpu',
         '--disable-dev-shm-usage',
         '--disable-setuid-sandbox',
-        '--no-first-run',
         '--no-sandbox',
         '--no-zygote',
-        '--deterministic-fetch',
-        '--disable-features=IsolateOrigins',
-        '--disable-site-isolation-trials',]}).then(console.log)
+        "enable-automation","disable-web-security","allow-running-insecure-content"]}).then(console.log)
       }
 
 
