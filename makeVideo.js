@@ -201,7 +201,7 @@ function loop(i){
 
       function uploadVideoFile(){
       const video1 = { path: 'out.mp4', title: 'test video title', description: 'test video description' }
-       upload (credentials, [video1], {headless:false, args :[ '--disable-gpu',
+       upload (credentials, [video1], {headless:true, args :[ '--disable-gpu',
         '--disable-dev-shm-usage',
         '--disable-setuid-sandbox',
         '--no-sandbox',
