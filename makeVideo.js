@@ -2,7 +2,7 @@ var ffmpeg = require('fluent-ffmpeg');
 var axios = require('axios');
 const fs = require('fs');
 const riddles = require('./riddles.js');
-const { upload } = require('youtube-uploader-fork'); //vanilla javascript
+const { upload } = require('youtube-uploader'); //vanilla javascript
 const { exec } = require('child_process');
 
 const inputVideo = 'out.mp4';
