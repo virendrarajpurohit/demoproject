@@ -8,6 +8,6 @@
     "fluent-ffmpeg": "^2.1.2",
     "fs-extra": "^10.1.0",
     "puppeteer": "^21.5.0",
-    "youtube-uploader-fork": "virendrarajpurohit/youtube-uploader-fork"
+    "youtube-uploader-fork": "virendrarajpurohit/youtube-uploader"
   }
 }
