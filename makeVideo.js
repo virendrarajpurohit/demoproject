@@ -200,7 +200,7 @@ const onVideoUploadSuccess = (videoUrl) => {
       // }
 
       //function uploadVideoFile(){
-      const video1 = { path: 'out.mp4', title: 'title', description: 'description' }
+      const video1 = { path: 'out.mp4', title: 'title hai', description: 'description' }
        upload (credentials, [video1], {headless:true, args :[
         '--disable-setuid-sandbox',
         '--no-sandbox',
