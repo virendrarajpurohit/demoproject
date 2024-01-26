@@ -201,11 +201,9 @@ const onVideoUploadSuccess = (videoUrl) => {
 
       //function uploadVideoFile(){
       const video1 = { path: 'out.mp4', title: 'title', description: 'description' }
-       upload (credentials, [video1], {headless:true, args :[ '--disable-gpu',
-        '--disable-dev-shm-usage',
+       upload (credentials, [video1], {headless:true, args :[
         '--disable-setuid-sandbox',
         '--no-sandbox',
-        '--no-zygote',
         "enable-automation","disable-web-security","allow-running-insecure-content","--start-maximized"]}).then(console.log)
       //}
 
