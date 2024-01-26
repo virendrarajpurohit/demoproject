@@ -3,11 +3,7 @@
     "start": "node makeVideo.js"
 },
   "dependencies": {
-    "axios": "^1.6.5",
-    "ffmpeg": "^0.0.4",
-    "fluent-ffmpeg": "^2.1.2",
     "fs-extra": "^10.1.0",
-    "puppeteer": "^21.5.0",
     "youtube-uploader": "virendrarajpurohit/youtube-uploader"
   }
 }
