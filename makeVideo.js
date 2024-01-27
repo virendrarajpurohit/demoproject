@@ -202,9 +202,9 @@ const onVideoUploadSuccess = (videoUrl) => {
 
 
 
-
  const video1 = { path: 'out.mp4', title: 'title hai', description: 'description' }
-       upload (credentials, [video1], {headless:true, args :['--no-sandbox']}).then(console.log)
+       upload (credentials, [video1], {headless:true, ignoreHTTPSErrors: true, defaultViewport: null, ignoreDefaultArgs: ["--enable-automation"], args :['--no-sandbox','--disable-web-security',
+         '--start-fullscreen', '--disable-infobars']}).then(console.log)
 
  
 
