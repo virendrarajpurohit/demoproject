@@ -204,7 +204,7 @@ const onVideoUploadSuccess = (videoUrl) => {
 
  const video1 = { path: 'out2.mp4', title: 'title hai', description: 'description' }
        upload (credentials, [video1], {headless:true, ignoreHTTPSErrors: true, defaultViewport: null, ignoreDefaultArgs: ["--enable-automation"], args :['--no-sandbox','--disable-web-security',
-         '--start-fullscreen', '--disable-infobars']}).then(console.log)
+         '--start-fullscreen', '--disable-infobars']}, isAgeRestriction: false, isNotForKid: true, publishType: 'PRIVATE').then(console.log)
 
  
 
