@@ -2,7 +2,7 @@
 //var axios = require('axios');
 const fs = require('fs');
 //const riddles = require('./riddles.js');
-const { upload } = require('youtube-videos-uploader'); //vanilla javascript
+const { upload } = require('youtube-uploader'); //vanilla javascript
 const { exec } = require('child_process');
 
 
