@@ -4,7 +4,6 @@
 },
   "dependencies": {
     "fs-extra": "^10.1.0",
-    "youtube-uploader": "virendrarajpurohit/youtube-uploader",
-    "xvfb": "^0.4.0"
+    "youtube-uploader": "^2.0.25"",
   }
 }
