@@ -10,7 +10,7 @@ const { exec } = require('child_process');
 //const outputVideo = 'zw1.mp4';
 
 // recoveryemail is optional, only required to bypass login with recovery email if prompted for confirmation
-const credentials = { email: 'ambarnath898@gmail.com', pass: '99669966', recoveryemail: '' }
+const credentials = { email: 'factpur6@gmail.com', pass: '9966Viru', recoveryemail: '' }
 
 // minimum required options to upload video
 
