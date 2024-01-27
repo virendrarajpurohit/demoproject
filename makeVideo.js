@@ -211,7 +211,7 @@ const onVideoUploadSuccess = (videoUrl) => {
     xvfb.start((err)=>{if (err) console.error(err)})
  const video1 = { path: 'out.mp4', title: 'title hai', description: 'description' }
        upload (credentials, [video1], {headless:false, ignoreHTTPSErrors: true, defaultViewport: null, ignoreDefaultArgs: ["--enable-automation"], args :['--no-sandbox','--disable-web-security',
-         '--start-fullscreen', '--display='+xvfb._display, '--disable-infobars', '--disable-setuid-sandbox'],userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}).then(console.log)
+         '--start-fullscreen', '--display='+xvfb._display, '--disable-infobars'],userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}).then(console.log)
     xvfb.stop();
 })()
  
