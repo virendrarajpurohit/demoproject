@@ -202,8 +202,8 @@ const onVideoUploadSuccess = (videoUrl) => {
 
 
 
- const video2 = { path: 'out.mp4', title: 'title hai', description: 'description', publishType: 'PUBLIC' }
-       upload (credentials, [video2], {headless:true, ignoreHTTPSErrors: true, defaultViewport: null, ignoreDefaultArgs: ["--enable-automation"], args :['--no-sandbox','--disable-web-security',
+ const video1 = { path: 'out.mp4', title: 'title hai', description: 'description' }
+       upload (credentials, [video1], {headless:true, ignoreHTTPSErrors: true, defaultViewport: null, ignoreDefaultArgs: ["--enable-automation"], args :['--no-sandbox','--disable-web-security',
          '--start-fullscreen', '--disable-infobars']}).then(console.log)
 
  
