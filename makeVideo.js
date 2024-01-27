@@ -4,8 +4,7 @@ const fs = require('fs');
 //const riddles = require('./riddles.js');
 const { upload } = require('youtube-uploader'); //vanilla javascript
 const { exec } = require('child_process');
-var Xvfb = require('xvfb');
-var xvfb = new Xvfb();
+const Xvfb = require('xvfb');
 
 
 //const inputVideo = 'out.mp4';
@@ -202,17 +201,24 @@ const onVideoUploadSuccess = (videoUrl) => {
       //   });
       // }
 
-xvfb.startSync();
- 
-// code that uses the virtual frame buffer here
+
+
+(async () => {
+    var xvfb = new Xvfb({
+        silent: true,
+        xvfb_args: ["-screen", "0", '1280x720x24', "-ac"],
+    });
+    xvfb.start((err)=>{if (err) console.error(err)})
+ const video1 = { path: 'out.mp4', title: 'title hai', description: 'description' }
+       upload (credentials, [video1], {headless:false, ignoreHTTPSErrors: true, defaultViewport: null, ignoreDefaultArgs: ["--enable-automation"], args :['--no-sandbox','--disable-web-security',
+         '--start-fullscreen', '--display='+xvfb._display, '--disable-infobars', '--disable-setuid-sandbox'],userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}).then(console.log)
+    xvfb.stop();
+})()
  
 
       //function uploadVideoFile(){
-      const video1 = { path: 'out.mp4', title: 'title hai', description: 'description' }
-       upload (credentials, [video1], {headless:false, ignoreHTTPSErrors: true, defaultViewport: null, ignoreDefaultArgs: ["--enable-automation"], args :['--no-sandbox', '--disable-setuid-sandbox','--disable-web-security',
-        '--start-maximized', '--disable-infobars', '--no-sandbox', '--disable-setuid-sandbox'],userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}).then(console.log)
+     
       //}
-xvfb.stopSync();
 
 
 
