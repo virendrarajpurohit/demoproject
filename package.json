@@ -4,6 +4,6 @@
 },
   "dependencies": {
     "fs-extra": "^10.1.0",
-    "youtube-uploader": "^2.0.25",
+    "youtube-uploader": "^2.0.25"
   }
 }
